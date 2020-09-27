@@ -1,1 +1,1 @@
-lua require('space-nvim')
+lua require('space-nvim-theme')
