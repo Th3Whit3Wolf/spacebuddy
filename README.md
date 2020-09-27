@@ -49,7 +49,7 @@ lua require('colorbuddy').colorscheme('space-nvim')
 In the terminal execute this command.
 
 ```sh
-cd ~/.local/share/nvim/site/pack/start/
+cd ~/.local/share/nvim/site/pack/opt/
 git clone https://github.com/tjdevries/colorbuddy.nvim
 git clone https://github.com/Th3Whit3Wolf/space-nvim-theme
 ```
