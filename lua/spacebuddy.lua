@@ -1,4 +1,4 @@
--- Name:         Space-nvim theme
+-- Name:         Spacebuddy
 -- Description:  Light and dark theme inspired by spacemacs-theme
 -- Author:       Th3Whit3Wolf <the.white.wolf.is.1337@gmail.com>
 -- Maintainer:   Th3Whit3Wolf <the.white.wolf.is.1337@gmail.com>
@@ -21,7 +21,7 @@ local sto = s.standout
 local no = s.NONE
 local v = vim.g
 
-v.colors_name = 'space-nvim'
+v.colors_name = 'spacebuddy'
 
 if vim.o.background == 'dark' then
     -- Dark Colors
