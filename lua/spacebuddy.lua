@@ -183,7 +183,6 @@ Group.new('Todo', c.orange0, c.bg0, b + i) -- anything that needs extra attentio
 -- Highlighting Groups (descriptions and ordering from `:h highlight-groups`) --
 --------------------------------------------------------------------------------
 
---
 Group.new('ColorColumn', c.fg0, c.bg1, no) --  used for the columns set with 'colorcolumn'
 Group.new('Conceal', c.blue0, c.bg0, no) -- placeholder characters substituted for concealed text (see 'conceallevel')
 Group.new('Cursor', c.orange0, c.bg0, b + r) -- the character under the cursor
@@ -232,8 +231,6 @@ Group.new('Visual', c.fg0, c.purple, no) -- Visual mode selection
 Group.new('VisualNOS', g.Visual, g.Visual, g.Visual) -- Visual mode selection when vim is "Not Owning the Selection". Only X11 Gui's gui-x11 and xterm-clipboard supports this.
 Group.new('WarningMsg', c.red, c.bg0, no) --  warning messages
 Group.new('WildMenu', c.orange0, c.bg1, b) --  current match in 'wildmenu' completion
-
-
 
 --------------------------------
 -- Miscellaneous Highlighting --
@@ -635,6 +632,8 @@ Group.new('BufTabLineCurrent', c.bg0, c.fg4, no)
 Group.new('BufTabLineActive', c.fg4, c.bg2, no)
 Group.new('BufTabLineHidden', c.purple4, c.bg1, no)
 Group.new('BufTabLineFill', c.bg0, c.bg0, no)
+-- Crates (mhinz/vim-crates)
+Group.new('Crate', g.Comment, g.Comment, g.Comment)
 -- CTRL P (ctrlpvim/ctrlp.vim)
 Group.new('CtrlPMatch', c.yellow, c.bg0, no)
 Group.new('CtrlPNoEntries', c.red, c.bg0, no)
@@ -661,6 +660,11 @@ Group.new('GitGutterAdd', c.green, c.bg0, b)
 Group.new('GitGutterChange', c.orange0, c.bg0, b)
 Group.new('GitGutterDelete', c.red, c.bg0, b)
 Group.new('GitGutterChangeDelete', c.red1, c.bg0, b)
+-- Git Messenger (rhysd/git-messenger.vim)
+Group.new('gitmessengerPopupNormal', g.CursorLine, g.CursorLine, g.CursorLine) -- Normal color in popup window
+Group.new('gitmessengerHeader', g.CursorLine, g.CursorLine, g.CursorLine)      -- Header such as 'Commit:', 'Author:'
+Group.new('gitmessengerHash', g.CursorLine, g.CursorLine, g.CursorLine)        -- Commit hash at 'Commit:' header
+Group.new('gitmessengerHistory', g.CursorLine, g.CursorLine, g.CursorLine)     --History number at 'History:' header    
 -- Indent Guide (nathanaelkane/vim-indent-guides)
 Group.new('IndentGuidesOdd', c.bg0, c.bg2, r)
 Group.new('IndentGuidesEven', c.bg0, c.bg1, r)
